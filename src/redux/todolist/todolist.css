@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: blueviolet;
+}
+.todo{
+    width: 50vw;
+    min-width: 300px;
+    max-width: 800px;
+    padding: 1rem;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    box-shadow: 0 0 4px 5px rgba(0,0,0,0.4);
+    border-radius: 1rem;
+}
+.todo form{
+    display: flex;
+}
+.todo input{
+    width: 80%;
+    padding: 0.5rem;
+    height: 40px;
+    border: 1px solid #3c3c3c;
+    border-radius: 0.5rem;
+    margin-right: 0.5rem;
+}
+.todo button{
+    width: 20%;
+    border: 2px solid #3c3c3c;
+    border-radius: 0.5rem;
+    font-size: 1rem;
+}
+.todo ul{
+    margin: 1rem;
+}
+.todo ul li{
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.todo ul li:nth-of-type(2n){
+    background-color: #e6e6e6;
+}
+.todo ul li .task{
+    display: inline-block;
+    margin-right: 0.5rem;
+    font-size: 1.25rem;
+}
+.todo ul li svg{
+    display: inline-flex;
+    padding: 0.5rem;
+    border: 1px solid;
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+    transition: all 0.45s ease-out;
+}
+.todo ul li svg:hover{
+    color: #fff;
+    background-color: #000;
+}
